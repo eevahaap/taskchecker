@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root'students#index'
+  resources :homepages
+
+  root'homepages#index'
 
   resources :schoolclasses
 
