@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  q1: MyString
+  q2: MyString
+  q3: MyString
+  q4: MyString
+  q5: MyString
+  question_name: MyString
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString
+  ans4: MyString
+  ans5: MyString
+  schoolclass_id: 1
+
+two:
+  q1: MyString
+  q2: MyString
+  q3: MyString
+  q4: MyString
+  q5: MyString
+  question_name: MyString
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString
+  ans4: MyString
+  ans5: MyString
+  schoolclass_id: 1

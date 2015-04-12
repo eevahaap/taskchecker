@@ -1,0 +1,8 @@
+<h1> Student Sign in </h1>
+
+  <%= form_tag studentsession_path do %>
+
+        <%= text_field_tag :username, params[:username] %>
+        <%= submit_tag "Log in" %>
+
+  <% end %>

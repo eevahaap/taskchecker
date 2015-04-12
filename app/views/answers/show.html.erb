@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @answer.username %>
+</p>
+
+<p>
+  <strong>question 1:</strong>
+  <% if @answer.res1 == 1 %>
+
+  Correct!
+      <% else %>
+
+  False.
+  <% end %>
+
+</p>
+
+<p>
+  <strong>question 2:</strong>
+  <% if @answer.res2 == 1 %>
+
+      Correct!
+  <% else %>
+
+      False.
+  <% end %>
+</p>
+
+<p>
+  <strong>question 3:</strong>
+  <% if @answer.res3 == 1 %>
+
+      Correct!
+  <% else %>
+
+      False.
+  <% end %>
+</p>
+
+<p>
+  <strong>question 4:</strong>
+  <% if @answer.res4 == 1 %>
+
+      Correct!
+  <% else %>
+
+      False.
+  <% end %>
+</p>
+
+<p>
+  <strong>question 5:</strong>
+  <% if @answer.res5 == 1 %>
+
+      Correct!
+  <% else %>
+
+      False.
+  <% end %>
+</p>
+
+<p>
+  <strong>Total res:</strong>
+  <%= @answer.total_res %>/5
+</p>
+
+<%= link_to 'Back', answers_path %>

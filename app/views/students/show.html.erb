@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @student.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @student.password %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @student.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @student.last_name %>
+</p>
+
+<p>
+  <strong>School class:</strong>
+  <%= @student.schoolclass.name %>
+</p>
+
+
+<p>
+  <strong> Questionnaires:</strong>
+</p>
+
+<p>
+
+  <% @student.schoolclass.questions.each do |question| %>
+         <%= link_to question.question_name, new_answer_path(:questionparam => question.id) %>
+
+  <% end %>
+
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

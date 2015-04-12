@@ -1,0 +1,79 @@
+<%= form_for(@question) do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% @question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= f.label :question_name %><br>
+      <%= f.text_field :question_name %>
+    </div>
+
+    <div class="field">
+    School Class
+    <%= f.select :schoolclass_id, options_from_collection_for_select(@schoolclasses, :id, :name, @question.schoolclass_id) %>
+    </div>
+
+
+  <div class="field">
+    Question 1<br>
+    <%= f.text_field :q1 %>
+  </div>
+
+    <div class="field">
+      Answer 1<br>
+      <%= f.text_field :ans1 %>
+    </div>
+
+  <div class="field">
+    Question 2<br>
+    <%= f.text_field :q2 %>
+  </div>
+
+    <div class="field">
+      Answer 2<br>
+      <%= f.text_field :ans2 %>
+    </div>
+
+  <div class="field">
+    Question 3<br>
+    <%= f.text_field :q3 %>
+  </div>
+
+    <div class="field">
+      Answer 3<br>
+      <%= f.text_field :ans3 %>
+    </div>
+
+  <div class="field">
+    Question 4<br>
+    <%= f.text_field :q4 %>
+  </div>
+
+    <div class="field">
+      Answer 4<br>
+      <%= f.text_field :ans4 %>
+    </div>
+
+  <div class="field">
+    Question 5<br>
+    <%= f.text_field :q5 %>
+  </div>
+
+  <div class="field">
+    Answer 5<br>
+    <%= f.text_field :ans5 %>
+  </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString
+  ans4: MyString
+  ans5: MyString
+  res1: 1
+  res2: 1
+  res3: 1
+  res4: 1
+  res5: 1
+  total_res: 1
+
+two:
+  username: MyString
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString
+  ans4: MyString
+  ans5: MyString
+  res1: 1
+  res2: 1
+  res3: 1
+  res4: 1
+  res5: 1
+  total_res: 1

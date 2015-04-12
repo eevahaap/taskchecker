@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question name:</strong>
+  <%= @question.question_name %>
+</p>
+
+<p>
+  <strong>School class:</strong>
+  <%= @question.schoolclass_id %>
+</p>
+
+<p>
+  <strong>Q1:</strong>
+  <%= @question.q1 %> = <%= @question.ans1%>
+</p>
+
+<p>
+  <strong>Q2:</strong>
+  <%= @question.q2 %> = <%= @question.ans2 %>
+</p>
+
+<p>
+  <strong>Q3:</strong>
+  <%= @question.q3 %> = <%= @question.ans3 %>
+</p>
+
+<p>
+  <strong>Q4:</strong>
+  <%= @question.q4 %> = <%= @question.ans4 %>
+</p>
+
+<p>
+  <strong>Q5:</strong>
+  <%= @question.q5 %> = <%= @question.ans5 %>
+</p>
+
+
+
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>
