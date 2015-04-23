@@ -8,14 +8,13 @@ class StudentsessionsController < ApplicationController
     # haetaan usernamea vastaava käyttäjä tietokannasta
     student = Student.find_by username: params[:username]
 
-    if student.nil?
-      redirect_to :back, notice: "Username and/or password mismatch"
-
-    else
+      if student && student.authenticate(params[:password])
       session[:student_id] = student.id
 
       # uudelleen ohjataan käyttäjä omalle sivulleen
       redirect_to student
+      else
+        redirect_to :back, notice: "Username and/or password mismatch"
     end
   end
 

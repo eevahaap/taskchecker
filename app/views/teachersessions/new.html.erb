@@ -1,8 +1,11 @@
-<h1> Teacher Sign in </h1>
+<h1> Teacher Log in </h1>
 
   <%= form_tag teachersession_path do %>
 
-        <%= text_field_tag :username, params[:username] %>
-        <%= submit_tag "Log in" %>
+    username
+    <%= text_field_tag :username, params[:username] %> <br>
+    password
+    <%= password_field_tag :password, params[:password] %> <br>
+      <%= submit_tag "Log in" %>
 
   <% end %>
