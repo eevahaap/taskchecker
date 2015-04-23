@@ -28,7 +28,7 @@ class TeachersController < ApplicationController
 
     respond_to do |format|
       if @teacher.save
-        format.html { redirect_to @teacher, notice: 'Teacher was successfully created.' }
+        format.html { redirect_to :root, notice: 'Teacher was successfully created. Now you can Log in' }
         format.json { render :show, status: :created, location: @teacher }
       else
         format.html { render :new }
