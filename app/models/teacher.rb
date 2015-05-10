@@ -6,4 +6,6 @@ class Teacher < ActiveRecord::Base
   validates :password, format: { with: /(?=.*\d)(?=.*[A-Z])/, message: "must have at least one capital and one number" }
   validates_length_of :password, minimum: 4
 
+  has_many :schoolclasses, through: :memberships
+
 end
